@@ -4,15 +4,15 @@ while [ $lagi == 'y' ] || [ $lagi == 'Y' ];
 do
 clear
 echo -e "=====================================";
-echo -e "\033[1;32m LOSS GAK REWEL TETAP SEMANGAT\033[0m";
+echo -e "\033[1;31m LOSS GAK REWEL TETAP SEMANGAT\033[0m";
 echo -e "=====================================";
 echo -e "\033[1;32m Sebelum Memulai Instalasi Pastikan Bahwa Spek VPS Yang Anda Gunakan Minimal 4GB RAM Untuk Menjalankan Satu Node\033[0m"
-echo -e "   1.\033[1;32mInstal Idena Manager\033[0m";
+echo -e "   1.\033[1;34mInstal Idena Manager\033[0m";
 echo -e "   2.\033[1;32mOnline Kan Status Mining\033[0m";
 echo -e "   3.\033[1;32mOffline Kan Status Mining\033[0m";
 echo -e "   4.\033[1;32mPerbaiki Error/update Idenachain.db pada idena manager\033[0m";
 echo -e "   5.\033[1;32mUpdate Node Manual Idena Manager\033[0m";
-echo -e "   6.\033[1;32mInstal Node Share\033[0m";
+echo -e "   6.\033[1;34mInstal Node Share\033[0m";
 echo -e "   7.\033[1;32mCek Status Node Share\033[0m";
 echo -e "   8.\033[1;32mEdit/Tambah/Hapus Apikey pada Node Share\033[0m";
 echo -e "   9.\033[1;32mUpdate Node Share\033[0m"
@@ -27,7 +27,7 @@ case $pil in
 	sudo fallocate -l 1G /swapfile2 && sudo chmod 600 /swapfile2 && sudo mkswap /swapfile2 && sudo swapon /swapfile2 && echo -e '/swapfile2 none swap sw 0 0' | sudo tee -a /etc/fstab
 	source <(curl -sL https://bit.ly/idena-manager-installer)
 	sudo ufw allow 9009/tcp
-	echo -e "\033[1;32m Instalasi Idena Manager sudah selesai\033[0m"
+	echo -e "\033[1;33m Instalasi Idena Manager sudah selesai\033[0m"
 	echo -e "\033[1;32m untuk Menambahkan node silahkan Gunakan perintah=\033[0m \033[1;35m idena-manager add -w ISI_NODEKEY_KAMU -k ISI_APIKEY_KAMU\033[0m"
 	echo -e "\033[1;32m Jika nodekey dan apikey di kosongkan maka secara otomatis akan generate code baru\033[0m"
 	echo -n "Kembali ke Menu Idena Asisten (Y) atau Keluar(N)?"
@@ -232,6 +232,6 @@ esac
 echo -e ""
 echo -e "\033[1;32m \033[0m"
 echo -e "\033[1;32m \033[0m"
-echo -e "\033[1;32m idena_indonesia idena sidoarjo\033[0m"
-echo -e "\033[1;32m iDNA  \033[0m"
+echo -e "\033[1;31m idena_indonesia idena sidoarjo\033[0m"
+echo -e "\033[1;37m iDNA  \033[0m"
 done
