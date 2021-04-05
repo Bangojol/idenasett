@@ -3,26 +3,27 @@ lagi='y'
 while [ $lagi == 'y' ] || [ $lagi == 'Y' ];
 do
 clear
-echo -e "=====================================";
+echo -e "+++++++++++++++++++++++++++++++++++++++++++";
 echo -e "\033[1;31m LOSS GAK REWEL TETAP SEMANGAT\033[0m";
-echo -e "\033[1;37m Idena Sidoarjo\033[0m";
-echo -e "=====================================";
-echo -e "\033[1;33m Sebelum Memulai Instalasi Pastikan Bahwa Spek VPS Yang Anda Gunakan Minimal 4GB RAM Untuk Menjalankan Satu Node\033[0m"
-echo -e "   1.\033[1;34mInstal Idena Manager\033[0m";
-echo -e "   2.\033[1;32mOnline Kan Status Mining\033[0m";
-echo -e "   3.\033[1;32mOffline Kan Status Mining\033[0m";
-echo -e "   4.\033[1;32mPerbaiki Error/update Idenachain.db pada idena manager\033[0m";
-echo -e "   5.\033[1;32mUpdate Node Manual Idena Manager\033[0m";
-echo -e "   6.\033[1;34mInstal Node Share\033[0m";
-echo -e "   7.\033[1;32mCek Status Node Share\033[0m";
-echo -e "   8.\033[1;32mEdit/Tambah/Hapus Apikey pada Node Share\033[0m";
-echo -e "   9.\033[1;32mUpdate Node Share\033[0m"
-echo -e "  10.\033[1;32mMatikan nodeshare\033[0m"
-echo -e "  11.\033[1;32mHidupkan nodeshare\033[0m"
-echo -e "  12.\033[1;32mExit/metu\033[0m";
-echo -e "=====================================";
-read -p "pilih ketik nomor=enter====>>> [1-11]: " pil;
-echo -e "=====================================";
+echo -e "\033[1;35m =====Selamat Menambang=======\033[0m";
+echo -e "\033[1;37m =======Idena Sidoarjo========\033[0m";
+echo -e "+++++++++++++++++++++++++++++++++++++++++++";
+echo -e "\033[1;33m Minimal Spek VPS 4GB RAM untuk Satu Node\033[0m"
+echo -e "   1.\033[1;36mInstall idena manager\033[0m";
+echo -e "   2.\033[1;36mOnline Kan Status Mining\033[0m";
+echo -e "   3.\033[1;36mOffline Kan Status Mining\033[0m";
+echo -e "   4.\033[1;36mPerbaiki Error/update Idenachain.db pada idena manager\033[0m";
+echo -e "   5.\033[1;36mUpdate Node Manual Idena Manager\033[0m";
+echo -e "   6.\033[1;36mInstall Node Share\033[0m";
+echo -e "   7.\033[1;36mCek Status Node Share\033[0m";
+echo -e "   8.\033[1;36mEdit/Tambah/Hapus Apikey pada Node Share\033[0m";
+echo -e "   9.\033[1;36mUpdate Node Share\033[0m"
+echo -e "  10.\033[1;36mMatikan nodeshare\033[0m"
+echo -e "  11.\033[1;36mHidupkan nodeshare\033[0m"
+echo -e "  12.\033[1;36mExit/metu/beres kabeh\033[0m";
+echo -e "+++++++++++++++++++++++++++++++++++++++++++";
+read -p "pilih ketik nomor ======= ENTER ====>>> [1-12]: " pil;
+echo -e "===========================================";
 case $pil in
 1)
 	sudo fallocate -l 1G /swapfile2 && sudo chmod 600 /swapfile2 && sudo mkswap /swapfile2 && sudo swapon /swapfile2 && echo -e '/swapfile2 none swap sw 0 0' | sudo tee -a /etc/fstab
@@ -216,8 +217,8 @@ PORT=80" > .env'
 	echo -e ""
 	echo -e "\033[1;32m \033[0m"
 	echo -e "\033[1;32m \033[0m"
-	echo -e "\033[1;31m idena_indonesia idena sidoarjo\033[0m"
-	echo -e "\033[1;37m iDNA  \033[0m"
+	echo -e "\033[1;31m +++++++++idena sidoarjo+++++++++\033[0m"
+	echo -e "\033[1;37m ++++++++++++iDNA++++++++++++++++  \033[0m"
 	exit
 ;;
 *)	echo -e "Maaf, Pilihan Tidak tersedia"
@@ -233,6 +234,6 @@ esac
 echo -e ""
 echo -e "\033[1;32m \033[0m"
 echo -e "\033[1;32m \033[0m"
-echo -e "\033[1;31m idena_indonesia idena sidoarjo\033[0m"
-echo -e "\033[1;37m iDNA  \033[0m"
+echo -e "\033[1;31m +++++++++idena sidoarjo+++++++++\033[0m"
+echo -e "\033[1;37m +++++++++++++iDNA+++++++++++++++  \033[0m"
 done
